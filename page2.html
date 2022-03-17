@@ -47,7 +47,7 @@
 					<li>
 					</li>
 					<li>
-						<a href="page2.html">page2 &gt;</a>
+						<a href="page2.html">Contact &gt;</a>
 					</li>
 				</ul>
 			</div>
@@ -81,27 +81,28 @@
 			<div class="col-sm-6">
 				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 					<div class="form-group">
-						<label>
+						<label for="name">
 							Nom
 						</label>
-						<input id="name" class="form-control" required />
+						<input id="name" alt="Nom de famille" class="form-control" type="text" value="Nom Prénom" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="email">
 							Adresse email
 						</label>
-						<input id="email" class="form-control" type="email" required />
+						<input id="email" alt="Adresse email" class="form-control" type="email" value="adressemail@gmail.com" required />
 					</div>
 					<div class="form-group">
 						<label>
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" type="email" required id="input_504" />
+						<input alt="Comment nous avez-vous connu ?" class="form-control" type="text"  value="Les réseaux, Site web, De bouche à oreille" required id="input_504" />
 					</div>
 					<div class="form-group">
 						<label>
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						</label>
+						<textarea  aria-label="Ajoutez autant de détails que necessaire" id="message" class="form-control" rows="4" cols="50" aria-valuetext="Ajoutez autant de détails que nécessaire" required></textarea>
 					</div> 
 					<button  class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" aria-label="Cliquer ici pour envoyer" type="submit">
 						Envoyer
