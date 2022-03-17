@@ -704,6 +704,10 @@ p {
     margin: auto auto auto auto;
 }
 
+.partners {
+    font-size: 20px;
+    margin: 12px;
+}
 h2 {
     font-size: 22px;
     line-height: 1.4em;
@@ -824,6 +828,14 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
 }
+
+
+
+
+
+
+
+/*****************************Media queries******************************************/
 
 @media (max-width: 1024px) {
     .bloc {
