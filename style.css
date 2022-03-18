@@ -695,21 +695,33 @@ h1 {
     margin: 12px;
 }
 
-
 h2 {
+    font-size: 34px;
+    line-height: 1.4em;
+}
+
+h3 {
     font-size: 24px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
 }
 
-h3 {
-    font-size: 34px;
-    line-height: 1.4em;
+q {
+    font-weight: bolder;
 }
+
+q,
+em {
+    font-size: 20px;
+    color: #333333;
+    font-style: normal;
+}
+
 h4 {
     font-size: 20px ;
 }
+
 .med-width-whitespace {
     max-width: 800px;
     margin: auto auto auto auto;
