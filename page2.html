@@ -42,7 +42,7 @@
 
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere.svg" alt="Le logo de l'agence represantant le visage d'une panthère" title="Logo de l'agence La Panthère"title="Logo de l'agence La Panthère" height="40" /></a>
+				<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere.svg" alt="Le logo de l'agence represantant le visage d'une panthère" title="Logo de l'agence La Panthère" height="40" /></a>
 				<button id="nav-toggle" type="button" aria-label="Icône de navigation" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
@@ -91,7 +91,7 @@
 			<div class="row">
 
 				<div class="col-sm-6">
-					<form id="form_1" novalidate > <!--success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"--> 
+					<form id="form_1" novalidate="" > <!--success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"--> 
 						<fieldset class="form-group">
 							<legend>Parlez-nous de votre projet !</legend>
 								<label for="name">
@@ -99,17 +99,17 @@
 								</label>
 								<input id="name" name="name" class="form-control" type="text" placeholder="Nom Prénom" required />
 							
-								<label>
+								<label for="email">
 									Adresse email
-								</label for="email">
+								</label >
 								<input id="email" name="email" class="form-control" type="email" placeholder="votremail@gmail.com" required />
 							
-								<label for="how did you know us">
+								<label for="input_504">
 									Comment nous avez-vous connu ?
 								</label>
 								<input  id="input_504" name="how-did-you-know-us" class="form-control" type="text" placeholder="Via twitter, sur internet, etc..." required  />
 							
-								<label for="tell us about you project">
+								<label for="message">
 									Brief de votre projet
 								</label>
 								<textarea id="message" name="your-project" class="form-control" rows="4" cols="50" placeholder="Ajoutez autant de détails sur votre, que nécessaire" required></textarea>
