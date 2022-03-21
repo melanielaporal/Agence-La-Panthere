@@ -1,3 +1,6 @@
+*{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+}
 body {
     margin: 0;
     padding: 0;
@@ -273,6 +276,7 @@ a:hover {
 
 #bloc-1-hero h1 {
     font-size: 59px;
+    font-family: helvetica;
 }
 
 .navbar {
@@ -692,10 +696,7 @@ p {
     margin: auto auto auto auto;
 }
 
-h1 {
-    font-size: 48px;
-    font-family: "Open Sans";
-}
+
 
 .cta-hero {
     margin-top: 22px;
@@ -706,9 +707,17 @@ h1 {
     font-weight: 700;
 }
 
+.col-sm-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
 .social {
-    max-width: 400px;
-    margin: auto auto auto auto;
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    margin: 12px;
 }
 
 .partners {
@@ -741,6 +750,7 @@ em {
 
 h4 {
     font-size: 20px ;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
 }
 
 .med-width-whitespace {
