@@ -2,12 +2,12 @@
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
 }
 body {
-    margin: 0;
-    padding: 0;
     background: #FFF;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    margin: 0;
 }
 
 a,
@@ -37,7 +37,7 @@ a:hover {
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
-    /*padding: 0 50px;*/
+    
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -48,24 +48,28 @@ a:hover {
 header {
     margin: auto;
 }
-.bloc .container {
-    padding-left: 0;
-    padding-right: 0;
-    
-}
 
-.bloc-lg {
-    padding: 100px 50px;
-}
-
-.bloc-md {
-    padding: 50px;
-}
-
+.bloc-xxl,
+.bloc-xl,
+.bloc-lg,
+.bloc-md 
 .bloc-sm {
-    padding: 20px 50px;
+    text-align: center;
+    padding: 48px 0 48px 0;
 }
 
+.bloc-md-center {
+    text-align: center;
+}
+
+form {
+    display: flex;
+}
+
+.form-bloc {
+    display: flex;
+    flex-direction: column;
+}
 .bg-center,
 .bg-l-edge,
 .bg-r-edge,
@@ -288,12 +292,13 @@ header {
 
 .voffset-lg {
     margin-top: 80px;
-    padding: 12px;
 }
 
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
+    display: flex;
+    flex-direction: row;
 }
 
 .row.row-no-gutters > [class^="col-"],
@@ -314,7 +319,6 @@ header {
 
 .navbar-brand {
     height: auto;
-    padding: 3px 15px;
     font-size: 25px;
     font-weight: normal;
     font-weight: 600;
@@ -478,9 +482,6 @@ margin-top: 10px;
 margin-bottom: 40px;
 }
 
-.btn {
-margin: 0 5px 5px 0;
-}
 
 .btn.pull-right {
 margin: 0 0 5px 5px;
@@ -497,16 +498,6 @@ button {
 outline: none!important;
 }
 
-.btn-rd {
-border-radius: 40px;
-}
-
-.btn-clean {
-border: 1px solid rgba(0, 0, 0, .08);
-border-bottom-color: rgba(0, 0, 0, .1);
-text-shadow: 0 1px 0 rgba(0, 0, 1, .1);
-box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
-}
 
 .icon-md {
 font-size: 30px!important;
@@ -522,6 +513,10 @@ text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
 footer {
     display: flex;
     justify-content: center;
+}
+
+.p-last {
+    color: #4a4747;
 }
 .panel-sq,
 .panel-sq .panel-heading,
@@ -678,25 +673,25 @@ background: none;
 }
 
 label {
-margin-bottom: 8px;
+    margin-bottom: 8px;
+    text-align: left;
 }
 
 input {
-margin-bottom: 30px;
-height: 30px;
+    margin-bottom: 30px;
+    height: 30px;
 }
 
 textarea {
-margin-bottom: 24px;
+    margin-bottom: 24px;
 }
 
 label,
-.btn,
 a {
-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
-font-weight: 400;
-color: #4a4747!important;
-font-size: 18px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+    font-weight: 400;
+    color: #4a4747!important;
+    font-size: 18px;
 }
 
 
@@ -734,9 +729,10 @@ margin: auto auto auto auto;
 
 .cta-hero {
 margin-top: 22px;
+background-color: #fead80;
+width: 200px;
 color: #FFFFFF!important;
 text-transform: uppercase;
-padding: 12px 28px 12px 28px;
 font-size: 16px;
 font-weight: 700;
 margin: auto;
@@ -780,11 +776,16 @@ q {
 font-weight: bolder;
 }
 
+.quote {
+    padding: 40px;
+}
+
 q,
 em {
 font-size: 20px;
 color: #364577;
 font-style: normal;
+
 }
 
 h4 {
@@ -819,6 +820,9 @@ margin-bottom: 24px;
 .portfolio-row {
 margin-bottom: 44px;
 margin-top: 50px;
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 
 .avatar {
@@ -855,8 +859,14 @@ background-color: #364577;
     color: #4a4747;
 }
 .btn-atomic-tangerine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #ff9e69;
     color: #4a4747!important;
+    border-radius: 40px;
+    height: 42px;
+    width: 120px;
 }
 
 .btn-atomic-tangerine:hover {
@@ -896,7 +906,9 @@ background-image: url("img/lines-h3-bg.png");
 }
 
 .bg-banniere {
-background-image: url("img/agence-la-panthere.jpg");
+    display: flex;
+    justify-content: center;
+    background-image: url("img/agence-la-panthere.jpg");
 }
 
 .bg-presentation {
@@ -905,6 +917,7 @@ background-image: url("img/image-de-presentation.jpeg");
 
 .container {
     width: 100%;
+
 }
 .b-parallax {
     background-attachment: scroll;
@@ -920,7 +933,7 @@ background-image: url("img/image-de-presentation.jpeg");
 }
 .bloc-group,
 .bloc-group .bloc {
-    display: block;
+    /*display: block;*/
     width: 100%;
 }
 .bloc-fill-screen .fill-bloc-top-edge,
@@ -1017,11 +1030,7 @@ p,
     padding-left: 0;
     padding-right: 0;
 }
-.bloc-xxl,
-.bloc-xl,
-.bloc-lg {
-    padding: 40px 0;
-}
+
 .bloc-sm,
 .bloc-md {
     padding-left: 0;
@@ -1035,9 +1044,10 @@ p,
     padding-left: 0;
     padding-right: 0;
 }
+/*
 .a-block {
     padding: 0 10px;
-}
+}*/
 .btn-dwn {
     display: none;
 }
