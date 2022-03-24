@@ -63,6 +63,11 @@ header {
     text-align: center;
 }
 
+.row-form {
+    display: flex;
+    justify-content: center;
+}
+
 form {
     display: flex;
 }
@@ -131,7 +136,6 @@ form {
 .d-bloc .divider-h span {
     border-color: rgba(255, 255, 255, .2);
 }
-
 
 .d-bloc a .icon-md {
     color: #4a4747;
@@ -525,7 +529,9 @@ footer {
 
 .p-last {
     color: #4a4747;
+    font-size: 16px;
 }
+
 .panel-sq,
 .panel-sq .panel-heading,
 .panel-sq .panel-footer {
@@ -745,7 +751,10 @@ font-size: 16px;
 font-weight: 700;
 margin: auto;
 }
-
+.col-sm-3 {
+    display: flex;
+    justify-content: center;
+}
 .col-sm-4 {
     padding: 0 12px;
 }
@@ -759,10 +768,11 @@ text-align: center;
 
 .social {
 display: flex;
+flex-direction: column;
 justify-content: center;
 text-decoration: none;
-width: 44px;
-height: 44px;
+width: 82px;
+height: 82px;
 margin: 12px;
 color: #4a4747;
 }
@@ -837,6 +847,7 @@ margin-top: 50px;
 display: flex;
 flex-direction: column;
 justify-content: center;
+align-items: center;
 }
 
 .avatar {
@@ -871,6 +882,7 @@ background-color: #364577;
 
 .tc-dark {
     color: #4a4747;
+    margin: 32px;
 }
 .btn-atomic-tangerine {
     display: flex;
@@ -978,7 +990,6 @@ p,
 }
 .navbar .nav {
     padding-top: 0;
-    border-top: 1px solid rgba(0, 0, 0, .2);
     float: none!important;
 }
 .navbar.row {
@@ -1044,6 +1055,13 @@ p,
 .bloc {
     padding-left: 0;
     padding-right: 0;
+}
+
+.bloc-0 {
+    padding: 0;
+}
+.bloc-7 {
+    padding: 0px 16px;
 }
 
 .bloc-sm,
