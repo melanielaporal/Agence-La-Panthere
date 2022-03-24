@@ -1,6 +1,7 @@
 *{
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
 }
+
 body {
     background: #FFF;
     overflow-x: hidden;
@@ -839,7 +840,8 @@ font-size: 16px;
 
 .portfolio-thumb {
 margin-bottom: 24px;
-width: 100%;
+width: 270px;
+height: 270px;
 }
 
 .portfolio-row {
@@ -1042,8 +1044,8 @@ p,
     box-shadow: none;
 }
 .navbar-brand img {
-    max-height: 40px;
-    width: auto;
+    height: 40px;
+    width: 217px;
 }
 .nav-invert .navbar-header {
     float: none;
