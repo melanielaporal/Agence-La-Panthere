@@ -43,6 +43,7 @@ a:hover {
     -o-background-size: cover;
     background-size: cover;
     position: relative;
+    padding: 24px;
 }
 
 header {
@@ -55,7 +56,7 @@ header {
 .bloc-md 
 .bloc-sm {
     text-align: center;
-    padding: 48px 0 48px 0;
+    padding: 32px 0 32px 0;
 }
 
 .bloc-md-center {
@@ -113,9 +114,7 @@ form {
     background-attachment: fixed;
 }
 
-.d-bloc {
-    color: rgba(255, 255, 255, .7);
-}
+
 
 .d-bloc button:hover {
     color: rgba(255, 255, 255, .9);
@@ -133,16 +132,21 @@ form {
     border-color: rgba(255, 255, 255, .2);
 }
 
+
 .d-bloc a .icon-md {
     color: #4a4747;
 }
+
 .d-bloc a:hover .icon-md {
     color: #364577;
 }
 
+
 .d-bloc a .social {
     color: #4a4747;
 }
+
+
 .d-bloc a .social {
     color: #364577;
 }
@@ -305,6 +309,9 @@ form {
 .row.row-no-gutters > [class*=" col-"] {
     padding-right: 0;
     padding-left: 0;
+    width: 84px;
+    height: 100px;
+    margin-top: 12px;
 }
 
 #bloc-1-hero h1 {
@@ -513,6 +520,7 @@ text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
 footer {
     display: flex;
     justify-content: center;
+    padding: 40px 0 40px 0;
 }
 
 .p-last {
@@ -738,6 +746,9 @@ font-weight: 700;
 margin: auto;
 }
 
+.col-sm-4 {
+    padding: 0 12px;
+}
 
 .col-sm-12 {
 display: flex;
@@ -747,10 +758,13 @@ text-align: center;
 }
 
 .social {
-display: inline-block;
+display: flex;
+justify-content: center;
+text-decoration: none;
 width: 44px;
 height: 44px;
 margin: 12px;
+color: #4a4747;
 }
 
 
@@ -899,6 +913,7 @@ border-color: #364577!important;
     display: flex;
     justify-content: center;
     background-image: url("img/dots-bg.png");
+    padding: 0 12px 0 12px;
 }
 
 .bg-lines-h3-bg {
